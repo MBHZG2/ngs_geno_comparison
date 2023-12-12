@@ -19,7 +19,7 @@ This repository contains a Bash pipeline for comparing genotypes between Whole G
    ```bash
    git clone https://github.com/MBHZG2/ngs_geno_comparison.git
    cd ngs_geno_comparison
-**2. Update the configuration file config.txt with the appropriate paths and settings**
+### Update the configuration file config.txt with the appropriate paths and settings**
 
 Run the Pipeline
 Run the variant calling script:
