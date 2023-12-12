@@ -1,0 +1,27 @@
+# config.txt
+
+# Paths to tools
+BCFTOOLS_PATH="/path/to/bcftools"
+PLINK_PATH="/path/to/plink"
+
+# Reference and input paths
+REF_PATH="/path/to/reference.fasta"
+BAM_PATH="/path/to/input/bam/files/"
+
+# SNP positions file
+SNP_POS_FILE="/path/to/snp_positions.txt"
+
+# PLINK map file
+PLINK_MAP_FILE="map_file.map"
+
+# Sample identifiers
+WGS_SAMPLE="WGS_SAMPLE_ID"
+GENOT_SAMPLE_ID="GENOT_SAMPLE_ID"
+
+# Output directory
+OUTPUT_DIR="OUTPUT"
+
+# Input files
+input_genotype_tepd_file="geno/"
+input_WGS_tepd_file="WGS_INPUT_DIR"
+
