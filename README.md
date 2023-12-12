@@ -14,17 +14,17 @@ This repository contains a Bash pipeline for comparing genotypes between Whole G
 
 ### Setup
 
-1. **Clone the repository:**
+**1. Clone the repository:**
 
    ```bash
    git clone https://github.com/MBHZG2/ngs_geno_comparison.git
    cd ngs_geno_comparison
-2. **Update the configuration file config.txt with the appropriate paths and settings**
+**2. Update the configuration file config.txt with the appropriate paths and settings**
 
 Run the Pipeline
 Run the variant calling script:
 sh call.sh -B "$BCFTOOLS_PATH" -P "$PLINK_PATH" -O "$OUTPUT_DIR" -I "$BAM_PATH" -S "$WGS_SAMPLE" -R "$REF_PATH" -N "$SNP_POS_FILE"
-3. **Run the comparison script** 
+**3. Run the comparison script** 
 
 sh Comparison_GENOTYPE_WGS_SNP_CHIP.sh -W "$WGS_SAMPLE" -G "$GENOT_SAMPLE_ID" -O "$OUTPUT_DIR" -I "$input_genotype_tepd_file" -i "$input_WGS_tepd_file" -m "$PLINK_MAP_FILE"
 
