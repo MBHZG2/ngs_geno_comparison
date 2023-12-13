@@ -13,7 +13,7 @@ cd ngs_geno_comparison
 ### Usage
 #### to run 
 bash PiP_GENO_NGS_COM_compined.run.sh -c $sample_config_file.txt
-#### Step1 generate config file for eahc sample
+#### Step1 generate config file for each sample
 bash generate.conf.for.call.sh
 #### Step 2: Run the variant calling script
 sh call.sh -B "$BCFTOOLS_PATH" -P "$PLINK_PATH" -O "$OUTPUT_DIR" -I "$BAM_PATH" -S "$WGS_SAMPLE" -R "$REF_PATH" -N "$SNP_POS_FILE"
