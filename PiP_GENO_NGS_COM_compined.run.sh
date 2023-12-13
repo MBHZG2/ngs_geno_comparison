@@ -1,13 +1,23 @@
 #!/bin/bash
 
+# Default configuration file
+CONFIG_FILE="config.txt"
+
+# Parse command-line options
+while getopts "c:" flag; do
+  case "${flag}" in
+    c) CONFIG_FILE=${OPTARG} ;;
+    *) echo "Usage: $0 -c <config_file>"; exit 1 ;;
+  esac
+done
+
 # Read configuration file
-if [[ -f "config.txt" ]]; then
-  source "config.txt"
+if [[ -f "$CONFIG_FILE" ]]; then
+  source "$CONFIG_FILE"
 else
-  echo "Error: Configuration file 'config.txt' not found."
+  echo "Error: Configuration file '$CONFIG_FILE' not found."
   exit 1
 fi
-
 
 # Part 1: Call Variants
 mkdir -p OUTPUT
